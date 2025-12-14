@@ -4,12 +4,16 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/sunny-flores-site/", // ✅ IMPORTANT for GitHub Pages project sites
+  // ✅ For custom domains (florescleaningcompany.com)
+  base: "/",
+
   server: {
-    host: true, // (optional) "::" can be finicky; true is safe locally
+    host: true,
     port: 8080,
   },
+
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
