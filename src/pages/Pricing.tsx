@@ -80,6 +80,7 @@ const addOns = [
   { name: "Laundry (wash, dry, fold)", price: "$20–$35/load" },
   { name: "Organizing (closet/pantry)", price: "$30–$50/area" },
   { name: "Garage sweep & tidy", price: "$40–$60" },
+  { name: "Eco-friendly cleaning", price: "+20% premium" },
 ];
 
 const Pricing = () => {
